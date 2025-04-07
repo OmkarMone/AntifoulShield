@@ -25,7 +25,7 @@ app.get('*', (req, res) => {
 });
 
 // Start the server
-const server = app.listen(PORT, '0.0.0.0', () => {
+const server = app.listen(PORT, () => {
   console.log(`Production server running on port ${PORT}`);
 });
 

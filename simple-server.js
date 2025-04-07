@@ -30,7 +30,7 @@ app.get('*', (req, res) => {
 
 // Use PORT environment variable or default to 5001
 const port = process.env.PORT || 5001;
-const server = app.listen(port, '0.0.0.0', () => {
+const server = app.listen(port, () => {
   console.log(`Simple production server running on port ${port}`);
 });
 

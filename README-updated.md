@@ -101,6 +101,28 @@ If you encounter any issues with NODE_ENV not being set correctly:
    NODE_ENV=production node start.js
    ```
 
+If you encounter ENOTSUP errors when starting the server:
+
+1. This is usually related to IPv6/IPv4 binding issues on Windows. Try these alternative methods:
+
+   **Method 1**: Modify the port binding to use a different port
+   ```
+   set PORT=3000
+   node production-server.js
+   ```
+
+   **Method 2**: Try using hostname 'localhost' instead of IP address
+   Edit production-server.js and simple-server.js to change:
+   ```javascript
+   // Change this line:
+   const server = app.listen(PORT, '0.0.0.0', () => {
+   
+   // To:
+   const server = app.listen(PORT, () => {
+   ```
+
+   **Method 3**: Run as administrator or use a port number above 1024
+
 ## Project Structure
 
 - `/client` - Frontend React application
@@ -111,3 +133,24 @@ If you encounter any issues with NODE_ENV not being set correctly:
 - `/start.js` - Cross-platform start script for ES Modules environments
 - `/start.bat` - Windows batch file for starting the production server
 - `/start.sh` - Linux/Mac shell script for starting the production server
+## Troubleshooting ENOTSUP Errors
+
+If you encounter "ENOTSUP" (operation not supported) errors when starting the server, especially on Windows:
+
+1. **The server files have been updated to work on most systems** by removing explicit host binding.
+   The server will now bind to all available network interfaces automatically.
+
+2. **If you still have issues, try using a different port:**
+   ```
+   set PORT=3000
+   node production-server.js
+   ```
+
+3. **Run PowerShell or Command Prompt as administrator** for better access to network interfaces.
+
+4. **Make sure no other application is using the same port**. Check with:
+   ```
+   netstat -ano | findstr :5001
+   ```
+
+5. **Firewall settings** may affect binding behavior. Consider allowing the Node.js application through your firewall.
