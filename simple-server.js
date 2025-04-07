@@ -3,11 +3,15 @@ import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
+// Ensure NODE_ENV is set to production
+process.env.NODE_ENV = 'production';
+
 // Convert ESM URL to file path
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 console.log('Starting the simple production server...');
+console.log('Environment:', process.env.NODE_ENV);
 console.log('Current directory:', __dirname);
 
 const app = express();

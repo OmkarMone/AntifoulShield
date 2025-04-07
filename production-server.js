@@ -7,6 +7,7 @@ process.env.NODE_ENV = 'production';
 const PORT = process.env.PORT || 5001;
 
 console.log('Starting the production server...');
+console.log('Environment:', process.env.NODE_ENV);
 console.log('Current directory:', __dirname);
 
 const app = express();
