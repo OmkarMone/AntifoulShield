@@ -1,25 +1,34 @@
-// Production server script
-import express from "express";
-import path from "path";
-import { fileURLToPath } from "url";
+// A simple production server in CommonJS format for Windows compatibility
+const express = require('express');
+const path = require('path');
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+// Set environment variables
+process.env.NODE_ENV = 'production';
+const PORT = process.env.PORT || 5001;
+
+console.log('Starting the production server...');
+console.log('Current directory:', __dirname);
 
 const app = express();
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
 
 // Serve static files from the dist/public directory
-app.use(express.static(path.join(__dirname, 'dist', 'public')));
+const staticDir = path.join(__dirname, 'dist', 'public');
+console.log('Serving static files from:', staticDir);
+app.use(express.static(staticDir));
 
 // For all other routes, serve the index.html
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist', 'public', 'index.html'));
+  const indexPath = path.join(__dirname, 'dist', 'public', 'index.html');
+  console.log('Request received, serving:', indexPath);
+  res.sendFile(indexPath);
 });
 
-// Use PORT environment variable or default to 5001
-const port = process.env.PORT || 5001;
-app.listen(port, '0.0.0.0', () => {
-  console.log(`Production server running on port ${port}`);
+// Start the server
+const server = app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Production server running on port ${PORT}`);
+});
+
+// Handle server errors
+server.on('error', (error) => {
+  console.error('Server error:', error);
 });

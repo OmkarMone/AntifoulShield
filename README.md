@@ -48,21 +48,27 @@ To build the project for production:
 npm run build
 ```
 
-To run the production build:
+#### Running in Production
 
-#### On Linux/Mac:
+##### On Windows:
+```
+start.bat
+```
+
+##### On Linux/Mac:
 ```bash
 ./start.sh
 ```
 
-#### On Windows:
+##### Using Node directly:
+For ES Modules (Linux/Mac):
 ```bash
-start.bat
+node start.js
 ```
 
-Or directly with Node:
-```bash
-NODE_ENV=production PORT=5001 node simple-server.js
+For CommonJS (Windows):
+```
+node production-server.js
 ```
 
 The production server will run on port 5001 by default. You can access it at http://localhost:5001.
@@ -72,4 +78,8 @@ The production server will run on port 5001 by default. You can access it at htt
 - `/client` - Frontend React application
 - `/server` - Express server for API endpoints
 - `/shared` - Shared types and schemas
-- `/simple-server.js` - Production server for serving the built static files
+- `/simple-server.js` - ES Modules production server
+- `/production-server.js` - CommonJS production server for Windows compatibility
+- `/start.js` - Cross-platform start script for ES Modules environments
+- `/start.bat` - Windows batch file for starting the production server
+- `/start.sh` - Linux/Mac shell script for starting the production server

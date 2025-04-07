@@ -1,15 +1,9 @@
-// Cross-platform start script
-import { exec } from 'child_process';
+// Cross-platform start script for the Anchor Paints website
+// Works on Windows, macOS, and Linux
 
-// Use cross-env for environment variables on all platforms and set PORT to 5001
-exec('npx cross-env NODE_ENV=production PORT=5001 node production-server.js', (error, stdout, stderr) => {
-  if (error) {
-    console.error(`Error: ${error.message}`);
-    return;
-  }
-  if (stderr) {
-    console.error(`Stderr: ${stderr}`);
-    return;
-  }
-  console.log(`Output: ${stdout}`);
-});
+// Set environment variables programmatically
+process.env.NODE_ENV = 'production';
+process.env.PORT = '5001';
+
+// Import and run the simple server
+import './simple-server.js';
