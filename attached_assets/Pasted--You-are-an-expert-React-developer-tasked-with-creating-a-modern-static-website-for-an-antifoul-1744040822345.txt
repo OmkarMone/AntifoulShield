@@ -1,0 +1,52 @@
+```
+You are an expert React developer tasked with creating a modern, static website for an antifouling paint product. The website should be visually appealing, performant, and secure.
+
+**Project Requirements:**
+
+1.  **Theme:** The website's color scheme should prominently feature red, blue, and white, reflecting the product's industry and creating a strong visual identity.
+2.  **Content:** Include the following sections:
+    * **Hero Section:** A visually striking introduction with a clear headline, a brief product description, and a call-to-action button (e.g., "Learn More," "Get a Quote").
+    * **Product Features:** Highlight the key benefits and technical specifications of the antifouling paint. Use icons and concise descriptions.
+    * **Application Guide:** Provide clear instructions and visuals (if possible) on how to apply the paint.
+    * **Benefits:** Clearly show why this product is better then other antifouling paints.
+    * **Gallery:** Showcase images of boats and other marine structures protected by the paint.
+    * **Contact Us:** Include a contact form or contact information.
+    * **Footer:** Include copyright information and links to relevant pages.
+3.  **Design:**
+    * Use a modern and clean design aesthetic.
+    * Choose visually appealing fonts that are easy to read. Suggest two font options.
+    * Ensure the website is responsive and looks good on all devices.
+    * Use high quality images.
+4.  **Performance:**
+    * Optimize images for web delivery.
+    * Minimize the use of external libraries.
+    * Ensure fast loading times.
+    * Use code splitting and lazy loading where possible.
+5.  **Security:**
+    * Follow React security best practices.
+    * Prevent cross-site scripting (XSS) vulnerabilities.
+    * Ensure all dependancies are up to date.
+6.  **Inspiration:**
+    * Research existing antifouling paint websites for inspiration.
+    * Consider the target audience (boat owners, marine professionals) and their needs.
+7.  **Technology:**
+    * Use React for the frontend.
+    * The website must be static, so create a build that can be hosted on a static hosting service like Netlify, Vercel, or AWS S3.
+    * Use modern React practices, including functional components and hooks.
+    * Use appropriate libraries for styling (e.g., styled-components, CSS modules, Tailwind CSS).
+
+**Deliverables:**
+
+1.  A fully functional React website with all required sections.
+2.  A `README.md` file with instructions on how to run and build the project.
+3.  Clear and well-commented code.
+
+**Please provide:**
+
+* The React component structure.
+* Example code snippets for key components.
+* Suggestions for fonts and styling approaches.
+* Suggestions for image optimization.
+* A brief description of best security pratices implemented.
+* A plan for how to build and deploy the static website.
+```
