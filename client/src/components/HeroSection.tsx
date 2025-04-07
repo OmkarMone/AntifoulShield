@@ -1,3 +1,5 @@
+import boatSvg from "@assets/boat-antifouling.svg";
+
 const HeroSection = () => {
   return (
     <section className="relative bg-gradient-to-r from-primary-blue to-dark-blue text-white">
@@ -21,9 +23,9 @@ const HeroSection = () => {
           </div>
           <div className="relative">
             <img 
-              src="https://images.unsplash.com/photo-1584223000628-c2dfbbc0c5e5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+              src={boatSvg} 
               alt="Boat with antifouling paint" 
-              className="rounded-lg shadow-2xl w-full object-cover h-[400px]"
+              className="rounded-lg shadow-2xl w-full bg-white/5 backdrop-blur-sm p-4"
             />
             <div className="absolute -bottom-4 -right-4 bg-primary-red text-white p-4 rounded shadow-lg">
               <p className="text-sm font-heading font-bold">PROVEN PROTECTION</p>
