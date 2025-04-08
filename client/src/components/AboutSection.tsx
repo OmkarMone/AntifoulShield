@@ -18,7 +18,7 @@ const AboutSection = () => {
             <div className="bg-white rounded-lg shadow-lg p-8 border-t-4 border-primary-red">
               <h3 className="text-2xl font-heading font-bold text-primary-blue mb-4">Our Company</h3>
               <p className="text-gray-600 mb-6">
-                Founded in 1997, Anchor Paints has been dedicated to developing superior marine coatings that protect vessels from the harsh marine environment while enhancing performance and efficiency.
+                Founded in 2010, Anchor Paints has been dedicated to developing superior marine coatings that protect vessels from the harsh marine environment while enhancing performance and efficiency for the Indian market.
               </p>
               
               <p className="text-gray-600 mb-6">
@@ -27,12 +27,12 @@ const AboutSection = () => {
               
               <div className="flex items-center gap-3 mb-3">
                 <Building className="text-primary-red h-5 w-5 flex-shrink-0" />
-                <span className="text-gray-700 font-semibold">Headquarters: Sydney, Australia</span>
+                <span className="text-gray-700 font-semibold">Headquarters: Maharashtra, India</span>
               </div>
               
               <div className="flex items-center gap-3 mb-3">
                 <Anchor className="text-primary-red h-5 w-5 flex-shrink-0" />
-                <span className="text-gray-700 font-semibold">Serving customers globally in 35+ countries</span>
+                <span className="text-gray-700 font-semibold">Serving customers across India</span>
               </div>
               
               <div className="flex items-center gap-3">
@@ -54,13 +54,13 @@ const AboutSection = () => {
                 </div>
                 
                 <div>
-                  <h4 className="text-xl font-heading font-bold text-primary-blue">Captain James Wilson</h4>
+                  <h4 className="text-xl font-heading font-bold text-primary-blue">Mr. Mukesh Mone</h4>
                   <p className="text-gray-500 font-medium">Founder & CEO</p>
                 </div>
               </div>
               
               <p className="text-gray-600 mb-4">
-                With over 30 years of experience in the maritime industry, Captain Wilson founded Anchor Paints after identifying the need for more effective and environmentally responsible antifouling solutions.
+                With extensive experience in the maritime industry, Mr. Mone founded Anchor Paints after identifying the need for more effective and environmentally responsible antifouling solutions for the Indian market.
               </p>
               
               <p className="text-gray-600">
@@ -69,8 +69,8 @@ const AboutSection = () => {
               
               <div className="mt-6 pt-6 border-t border-gray-200">
                 <h5 className="font-heading font-semibold text-primary-blue mb-2">Contact the Owner:</h5>
-                <p className="text-gray-600">Email: james.wilson@anchorpaints.com</p>
-                <p className="text-gray-600">Phone: +61 (2) 9876-5432</p>
+                <p className="text-gray-600">Email: mukesh.mone@gmail.com</p>
+                <p className="text-gray-600">Phone: +91 9420481040</p>
               </div>
             </div>
           </div>
