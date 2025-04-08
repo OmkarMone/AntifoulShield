@@ -76,24 +76,33 @@ node production-server.js
 
 The production server will run on port 5001 by default. You can access it at http://localhost:5001.
 
-##### Troubleshooting:
+##### Troubleshooting NODE_ENV Configuration:
 
 If you encounter any issues with NODE_ENV not being set correctly:
 
-1. Both server scripts (`simple-server.js` and `production-server.js`) explicitly set `NODE_ENV=production` internally
-2. You can verify the environment by checking the console logs when starting the server
-3. If needed, you can manually set the environment variable before running:
+1. **Multiple levels of NODE_ENV setting have been implemented:**
+   - The starter scripts (`start.bat`, `start.sh`) set NODE_ENV=production
+   - The JavaScript starter file (`start.js`) verifies and sets NODE_ENV if needed
+   - Both server scripts (`simple-server.js` and `production-server.js`) do a final verification
+   
+2. **Debugging NODE_ENV issues:**
+   - All scripts now include verbose logging to show the current NODE_ENV value
+   - The scripts perform verification checks and will attempt to fix NODE_ENV if incorrectly set
+   - You can verify the environment by checking the console logs when starting the server
+
+3. **Manual environment setting:**
+   If all automatic methods fail, you can manually set the environment variable before running:
    
    **Windows (Command Prompt):**
    ```
    set NODE_ENV=production
-   node production-server.js
+   node start.js
    ```
    
    **Windows (PowerShell):**
    ```
    $env:NODE_ENV="production"
-   node production-server.js
+   node start.js
    ```
    
    **Linux/Mac:**

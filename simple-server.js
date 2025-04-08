@@ -3,8 +3,11 @@ import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-// Ensure NODE_ENV is set to production
-process.env.NODE_ENV = 'production';
+// Ensure NODE_ENV is set to production with double verification
+if (process.env.NODE_ENV !== 'production') {
+  console.log('NODE_ENV was not set to production. Setting it now...');
+  process.env.NODE_ENV = 'production';
+}
 
 // Convert ESM URL to file path
 const __filename = fileURLToPath(import.meta.url);

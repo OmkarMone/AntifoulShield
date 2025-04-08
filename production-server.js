@@ -2,9 +2,15 @@
 const express = require('express');
 const path = require('path');
 
-// Set environment variables
+// Force set environment variables - added additional checks for Windows compatibility
 process.env.NODE_ENV = 'production';
 const PORT = process.env.PORT || 5001;
+
+// Double check NODE_ENV is set
+if (process.env.NODE_ENV !== 'production') {
+  console.warn('Warning: NODE_ENV not set to production. Forcing it now.');
+  process.env.NODE_ENV = 'production';
+}
 
 console.log('Starting the production server...');
 console.log('Environment:', process.env.NODE_ENV);
