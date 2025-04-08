@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import FeaturesSection from "@/components/FeaturesSection";
+import AboutSection from "@/components/AboutSection";
 import ApplicationGuide from "@/components/ApplicationGuide";
 import BenefitsSection from "@/components/BenefitsSection";
 import GallerySection from "@/components/GallerySection";
@@ -41,6 +42,7 @@ const Home = () => {
       <main>
         <HeroSection />
         <FeaturesSection />
+        <AboutSection />
         <ApplicationGuide />
         <BenefitsSection />
         <GallerySection />

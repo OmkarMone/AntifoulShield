@@ -1,0 +1,89 @@
+import { User, Building, Award, Anchor } from 'lucide-react';
+
+const AboutSection = () => {
+  return (
+    <section id="about" className="bg-gray-50 py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary-blue">
+            About <span className="text-primary-red">Anchor Paints</span>
+          </h2>
+          <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto font-body">
+            Trusted by marine professionals and boat owners for over 25 years, providing the highest quality antifouling solutions for vessels of all sizes.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="order-2 md:order-1">
+            <div className="bg-white rounded-lg shadow-lg p-8 border-t-4 border-primary-red">
+              <h3 className="text-2xl font-heading font-bold text-primary-blue mb-4">Our Company</h3>
+              <p className="text-gray-600 mb-6">
+                Founded in 1997, Anchor Paints has been dedicated to developing superior marine coatings that protect vessels from the harsh marine environment while enhancing performance and efficiency.
+              </p>
+              
+              <p className="text-gray-600 mb-6">
+                Our specialized antifouling paints are formulated with advanced polymer technology to ensure long-lasting protection against barnacles, algae, and other marine growth.
+              </p>
+              
+              <div className="flex items-center gap-3 mb-3">
+                <Building className="text-primary-red h-5 w-5 flex-shrink-0" />
+                <span className="text-gray-700 font-semibold">Headquarters: Sydney, Australia</span>
+              </div>
+              
+              <div className="flex items-center gap-3 mb-3">
+                <Anchor className="text-primary-red h-5 w-5 flex-shrink-0" />
+                <span className="text-gray-700 font-semibold">Serving customers globally in 35+ countries</span>
+              </div>
+              
+              <div className="flex items-center gap-3">
+                <Award className="text-primary-red h-5 w-5 flex-shrink-0" />
+                <span className="text-gray-700 font-semibold">ISO 9001 certified manufacturing</span>
+              </div>
+            </div>
+          </div>
+          
+          <div className="order-1 md:order-2">
+            <div className="bg-white rounded-lg shadow-lg p-8 border-t-4 border-primary-blue">
+              <h3 className="text-2xl font-heading font-bold text-primary-blue mb-4">Meet the Owner</h3>
+              
+              <div className="flex flex-col sm:flex-row items-center gap-6 mb-6">
+                <div className="flex-shrink-0">
+                  <div className="w-32 h-32 bg-gray-200 rounded-full flex items-center justify-center overflow-hidden">
+                    <User className="h-20 w-20 text-gray-400" strokeWidth={1} />
+                  </div>
+                </div>
+                
+                <div>
+                  <h4 className="text-xl font-heading font-bold text-primary-blue">Captain James Wilson</h4>
+                  <p className="text-gray-500 font-medium">Founder & CEO</p>
+                </div>
+              </div>
+              
+              <p className="text-gray-600 mb-4">
+                With over 30 years of experience in the maritime industry, Captain Wilson founded Anchor Paints after identifying the need for more effective and environmentally responsible antifouling solutions.
+              </p>
+              
+              <p className="text-gray-600">
+                "My mission has always been to create products that not only protect vessels but also enhance their performance while minimizing environmental impact. Every formula we develop is tested rigorously to ensure it meets the highest standards of quality and durability."
+              </p>
+              
+              <div className="mt-6 pt-6 border-t border-gray-200">
+                <h5 className="font-heading font-semibold text-primary-blue mb-2">Contact the Owner:</h5>
+                <p className="text-gray-600">Email: james.wilson@anchorpaints.com</p>
+                <p className="text-gray-600">Phone: +61 (2) 9876-5432</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div className="mt-16 text-center">
+          <a href="#contact" className="inline-block px-6 py-3 bg-primary-blue text-white font-heading font-medium rounded-md hover:bg-blue-700 transition duration-150">
+            Get in Touch With Us
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AboutSection;
