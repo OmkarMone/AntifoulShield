@@ -105,12 +105,6 @@ const ProductCard = ({ product }: { product: ProductProps }) => {
           {product.pricingInfo && (
             <p className="text-gray-500 text-sm">{product.pricingInfo}</p>
           )}
-          <a 
-            href="#contact" 
-            className="mt-3 inline-block w-full text-center px-4 py-2 bg-primary-blue text-white font-medium rounded hover:bg-blue-700 transition duration-200"
-          >
-            Request Quote
-          </a>
         </div>
       </div>
     </div>
