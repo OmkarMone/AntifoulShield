@@ -7,7 +7,7 @@ import ProductsSection from "@/components/ProductsSection";
 import ApplicationGuide from "@/components/ApplicationGuide";
 import BenefitsSection from "@/components/BenefitsSection";
 import GallerySection from "@/components/GallerySection";
-import ContactSection from "@/components/ContactSection";
+import ResourcesSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
 const Home = () => {
@@ -48,7 +48,7 @@ const Home = () => {
         <ApplicationGuide />
         <BenefitsSection />
         <GallerySection />
-        <ContactSection />
+        <ResourcesSection />
       </main>
       <Footer />
     </div>
