@@ -45,6 +45,7 @@ const Home = () => {
         <ApplicationGuide />
         <BenefitsSection />
         <GallerySection />
+        <ProductsSection />
         <ResourcesSection />
       </main>
     </div>
