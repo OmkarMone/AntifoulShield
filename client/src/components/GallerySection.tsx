@@ -1,4 +1,6 @@
 
+import React from 'react';
+
 const GalleryImage = ({ src, alt, title, description }: {
   src: string;
   alt: string;
@@ -24,37 +26,37 @@ const GalleryImage = ({ src, alt, title, description }: {
 const GallerySection = () => {
   const galleryImages = [
     {
-      src: "https://5.imimg.com/data5/SELLER/Default/2021/3/KF/QC/XG/3823480/anti-fouling-paint-500x500.jpg",
+      src: "/gallery/antifouling1.jpg",
       alt: "Premium Antifouling Paint",
       title: "Premium Antifouling",
       description: "High-performance coating for maximum protection"
     },
     {
-      src: "https://5.imimg.com/data5/SELLER/Default/2021/3/XU/OB/WC/3823480/boat-antifouling-paint-500x500.jpg",
+      src: "/gallery/antifouling2.jpg",
       alt: "Marine Paint Application",
       title: "Application Process",
       description: "Professional application techniques"
     },
     {
-      src: "https://5.imimg.com/data5/SELLER/Default/2023/7/332766400/UZ/YE/FS/3823480/underwater-hull-paint-500x500.jpg",
+      src: "/gallery/antifouling3.jpg",
       alt: "Underwater Hull Paint",
       title: "Hull Protection",
       description: "Complete underwater hull protection"
     },
     {
-      src: "https://5.imimg.com/data5/SELLER/Default/2023/7/332766400/ZD/QK/BU/3823480/marine-antifouling-paint-500x500.jpg",
+      src: "/gallery/antifouling4.jpg",
       alt: "Marine Antifouling Paint",
       title: "Marine Grade",
       description: "Specialized marine protection coating"
     },
     {
-      src: "https://5.imimg.com/data5/SELLER/Default/2023/7/332766400/WX/YC/UM/3823480/tin-free-antifouling-paint-500x500.jpg",
+      src: "/gallery/antifouling5.jpg",
       alt: "Eco-friendly Paint",
       title: "Eco-Friendly Solution",
       description: "Environmental conscious formulation"
     },
     {
-      src: "https://5.imimg.com/data5/SELLER/Default/2021/3/VN/HL/DF/3823480/underwater-hull-paint-500x500.jpg",
+      src: "/gallery/antifouling6.jpg",
       alt: "Hull Paint Application",
       title: "Application Guide",
       description: "Step-by-step application process"
