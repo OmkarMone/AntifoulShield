@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight, Plus } from 'lucide-react';
 
@@ -13,55 +14,55 @@ interface ProductProps {
 const initialProducts: ProductProps[] = [
   {
     id: 'product-1',
-    name: 'Underwater Hull Paint',
-    description: 'High-performance antifouling paint for underwater hull protection.',
+    name: 'Antifouling Regular Grade Paint',
+    description: 'Standard antifouling protection for regular marine environments.',
     features: [
+      'Suitable for all vessel types',
       'Long-lasting protection',
-      'Excellent adhesion properties',
-      'Prevents marine growth',
+      'Easy application',
       'Cost-effective solution'
     ],
-    imageUrl: 'https://5.imimg.com/data5/SELLER/Default/2023/7/332766400/UZ/YE/FS/3823480/underwater-hull-paint.jpg',
+    imageUrl: '/gallery/regular-grade.jpg',
     pricingInfo: 'Available in 20L containers'
   },
   {
     id: 'product-2',
-    name: 'Eco-Friendly Antifouling',
-    description: 'Environmentally responsible formula with reduced biocide content while maintaining effective protection.',
+    name: 'Antifouling Fibergold Paint',
+    description: 'Premium grade antifouling with enhanced protection properties.',
     features: [
-      'Eco-certified components',
-      'Low VOC emissions',
-      'Up to 18 months protection',
-      'Minimal environmental impact'
+      'Superior protection',
+      'Extended longevity',
+      'Advanced formula',
+      'Professional grade'
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1574786198875-88959e80a03c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-    pricingInfo: 'Available in 1L and 2.5L containers'
+    imageUrl: '/gallery/fibergold.jpg',
+    pricingInfo: 'Available in 10L and 20L containers'
   },
   {
     id: 'product-3',
-    name: 'High-Speed Vessel Coating',
-    description: 'Specially formulated for high-speed vessels requiring maximum performance and minimal drag.',
+    name: 'Antifouling Captain Grade Paint',
+    description: 'Top-tier antifouling solution for maximum vessel protection.',
     features: [
-      'Ultra-smooth finish',
-      'Enhanced speed performance',
-      'Fuel saving technology',
-      'Advanced polymer bonding'
+      'Maximum protection',
+      'Premium quality',
+      'Extended service life',
+      'Professional results'
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1544551763-92ab472cad5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-    pricingInfo: 'Available in 2.5L and 5L containers'
+    imageUrl: '/gallery/captain-grade.jpg',
+    pricingInfo: 'Available in 20L containers'
   },
   {
     id: 'product-4',
-    name: 'Tropical Water Formula',
-    description: 'Designed specifically for vessels operating in warm tropical waters with high fouling pressure.',
+    name: 'Epoxy Red Oxide Primer',
+    description: 'High-quality primer for optimal paint adhesion and protection.',
     features: [
-      'Enhanced biocide release in warm waters',
-      'Resistant to barnacle attachment',
-      'Protection against tropical algae growth',
-      'UV stabilized formulation'
+      'Superior adhesion',
+      'Corrosion protection',
+      'Extended durability',
+      'Professional finish'
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1596464716127-f2a82984de30?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-    pricingInfo: 'Available in 1L, 2.5L, and 5L containers'
+    imageUrl: '/gallery/red-oxide.jpg',
+    pricingInfo: 'Available in standard sizes'
   }
 ];
 
@@ -170,18 +171,6 @@ const ProductsSection = () => {
             </button>
           </div>
         )}
-        
-        <div className="mt-16 text-center">
-          <a 
-            href="#contact" 
-            className="inline-block px-6 py-3 bg-primary-red text-white font-heading font-medium rounded-md hover:bg-red-700 transition duration-150"
-          >
-            Get Custom Product Recommendations
-          </a>
-          <p className="mt-4 text-gray-500">
-            Need help choosing the right product for your vessel? Contact us for personalized assistance.
-          </p>
-        </div>
       </div>
     </section>
   );
