@@ -22,7 +22,7 @@ const initialProducts: ProductProps[] = [
       'Easy application',
       'Cost-effective solution'
     ],
-    imageUrl: '/gallery/regular-grade.jpg',
+    imageUrl: '/products/regular-grade.jpg',
     pricingInfo: 'Available in 20L containers'
   },
   {
@@ -35,7 +35,7 @@ const initialProducts: ProductProps[] = [
       'Advanced formula',
       'Professional grade'
     ],
-    imageUrl: '/gallery/fibergold.jpg',
+    imageUrl: '/products/fibergold.jpg',
     pricingInfo: 'Available in 10L and 20L containers'
   },
   {
@@ -48,7 +48,7 @@ const initialProducts: ProductProps[] = [
       'Extended service life',
       'Professional results'
     ],
-    imageUrl: '/gallery/captain-grade.jpg',
+    imageUrl: '/products/captain-grade.jpg',
     pricingInfo: 'Available in 20L containers'
   },
   {
@@ -61,7 +61,7 @@ const initialProducts: ProductProps[] = [
       'Extended durability',
       'Professional finish'
     ],
-    imageUrl: '/gallery/red-oxide.jpg',
+    imageUrl: '/products/red-oxide.jpg',
     pricingInfo: 'Available in standard sizes'
   }
 ];
