@@ -22,7 +22,7 @@ const initialProducts: ProductProps[] = [
       'Easy application',
       'Cost-effective solution'
     ],
-    imageUrl: '/products/regular-grade.jpg',
+    imageUrl: '/products/antifouling-regular.png',
     pricingInfo: 'Available in 20L containers'
   },
   {
@@ -35,7 +35,7 @@ const initialProducts: ProductProps[] = [
       'Advanced formula',
       'Professional grade'
     ],
-    imageUrl: '/products/fibergold.jpg',
+    imageUrl: '/products/antifouling-fibergold.png',
     pricingInfo: 'Available in 10L and 20L containers'
   },
   {
@@ -48,7 +48,7 @@ const initialProducts: ProductProps[] = [
       'Extended service life',
       'Professional results'
     ],
-    imageUrl: '/products/captain-grade.jpg',
+    imageUrl: '/products/antifouling-captain.png',
     pricingInfo: 'Available in 20L containers'
   },
   {
@@ -61,7 +61,7 @@ const initialProducts: ProductProps[] = [
       'Extended durability',
       'Professional finish'
     ],
-    imageUrl: '/products/red-oxide.jpg',
+    imageUrl: '/products/red-oxide-primer.png',
     pricingInfo: 'Available in standard sizes'
   }
 ];
