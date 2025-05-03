@@ -18,8 +18,7 @@ const Navbar = () => {
           <div className="flex items-center">
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center">
-              <div className="text-primary-blue font-heading font-bold text-xl flex items-center">
-                <i className="fa-solid fa-anchor mr-2"></i>
+              <div className="text-primary-blue font-heading font-bold text-xl">
                 <span>ANCHOR<span className="text-primary-red">PAINTS</span></span>
               </div>
             </div>
