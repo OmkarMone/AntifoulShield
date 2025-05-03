@@ -3,7 +3,6 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import AboutSection from "@/components/AboutSection";
-import ProductsSection from "@/components/ProductsSection";
 import ApplicationGuide from "@/components/ApplicationGuide";
 import BenefitsSection from "@/components/BenefitsSection";
 import GallerySection from "@/components/GallerySection";
@@ -43,7 +42,6 @@ const Home = () => {
         <HeroSection />
         <FeaturesSection />
         <AboutSection />
-        <ProductsSection />
         <ApplicationGuide />
         <BenefitsSection />
         <GallerySection />
