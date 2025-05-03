@@ -20,53 +20,55 @@ const AboutSection = () => {
               <p className="text-gray-600 mb-6">
                 Founded in 2010, Anchor Paints has been dedicated to developing superior marine coatings that protect vessels from the harsh marine environment while enhancing performance and efficiency for the Indian market.
               </p>
-              
+
               <p className="text-gray-600 mb-6">
                 Our specialized antifouling paints are formulated with advanced polymer technology to ensure long-lasting protection against barnacles, algae, and other marine growth.
               </p>
-              
+
               <div className="flex items-center gap-3 mb-3">
                 <Building className="text-primary-red h-5 w-5 flex-shrink-0" />
                 <span className="text-gray-700 font-semibold">Headquarters: Maharashtra, India</span>
               </div>
-              
+
               <div className="flex items-center gap-3 mb-3">
                 <Anchor className="text-primary-red h-5 w-5 flex-shrink-0" />
                 <span className="text-gray-700 font-semibold">Serving customers across India</span>
               </div>
-              
+
               <div className="flex items-center gap-3">
                 <Award className="text-primary-red h-5 w-5 flex-shrink-0" />
                 <span className="text-gray-700 font-semibold">ISO 9001 certified manufacturing</span>
               </div>
             </div>
           </div>
-          
+
           <div className="order-1 md:order-2">
             <div className="bg-white rounded-lg shadow-lg p-8 border-t-4 border-primary-blue">
               <h3 className="text-2xl font-heading font-bold text-primary-blue mb-4">Meet the Owner</h3>
-              
+
               <div className="flex flex-col sm:flex-row items-center gap-6 mb-6">
                 <div className="flex-shrink-0">
-                  <div className="w-32 h-32 bg-gray-200 rounded-full flex items-center justify-center overflow-hidden">
-                    <User className="h-20 w-20 text-gray-400" strokeWidth={1} />
-                  </div>
+                  <img 
+                  src="/images/mukesh-mone.jpg" 
+                  alt="Mr. Mukesh Mone - Founder & CEO" 
+                  className="w-32 h-32 rounded-full object-cover"
+                />
                 </div>
-                
+
                 <div>
                   <h4 className="text-xl font-heading font-bold text-primary-blue">Mr. Mukesh Mone</h4>
                   <p className="text-gray-500 font-medium">Founder & CEO</p>
                 </div>
               </div>
-              
+
               <p className="text-gray-600 mb-4">
                 With extensive experience in the maritime industry, Mr. Mone founded Anchor Paints after identifying the need for more effective and environmentally responsible antifouling solutions for the Indian market.
               </p>
-              
+
               <p className="text-gray-600">
                 "My mission has always been to create products that not only protect vessels but also enhance their performance while minimizing environmental impact. Every formula we develop is tested rigorously to ensure it meets the highest standards of quality and durability."
               </p>
-              
+
               <div className="mt-6 pt-6 border-t border-gray-200">
                 <h5 className="font-heading font-semibold text-primary-blue mb-2">Contact the Owner:</h5>
                 <p className="text-gray-600">Email: mukesh.mone@gmail.com</p>
@@ -75,7 +77,7 @@ const AboutSection = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="mt-16 text-center">
           <a href="#contact" className="inline-block px-6 py-3 bg-primary-blue text-white font-heading font-medium rounded-md hover:bg-blue-700 transition duration-150">
             Get in Touch With Us
