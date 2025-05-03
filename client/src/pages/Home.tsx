@@ -8,7 +8,6 @@ import ApplicationGuide from "@/components/ApplicationGuide";
 import BenefitsSection from "@/components/BenefitsSection";
 import GallerySection from "@/components/GallerySection";
 import ResourcesSection from "@/components/ContactSection";
-import Footer from "@/components/Footer";
 
 const Home = () => {
   useEffect(() => {
@@ -50,7 +49,6 @@ const Home = () => {
         <GallerySection />
         <ResourcesSection />
       </main>
-      <Footer />
     </div>
   );
 };
