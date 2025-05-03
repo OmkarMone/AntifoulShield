@@ -25,40 +25,40 @@ const GalleryImage = ({ src, alt, title, description }: GalleryImageProps) => {
 const GallerySection = () => {
   const galleryImages = [
     {
-      src: "https://images.unsplash.com/photo-1540946485063-a40da27545f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80",
-      alt: "Sailboat with clean hull",
-      title: "Racing Sailboat",
-      description: "Protected with Anchor Premium Antifouling"
+      src: "https://5.imimg.com/data5/SELLER/Default/2021/3/KF/QC/XG/3823480/anti-fouling-paint.jpg",
+      alt: "Premium Antifouling Paint",
+      title: "Premium Antifouling",
+      description: "High-performance coating for maximum protection"
     },
     {
-      src: "https://images.unsplash.com/photo-1575468130797-aa90248b1c41?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80",
-      alt: "Yacht hull being painted",
+      src: "https://5.imimg.com/data5/SELLER/Default/2022/9/VO/DN/ST/3823480/antifouling-marine-paint.jpg",
+      alt: "Marine Paint Application",
       title: "Application Process",
-      description: "Professional application on luxury yacht"
+      description: "Professional application techniques"
     },
     {
-      src: "https://images.unsplash.com/photo-1564126935444-6684da556765?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80",
-      alt: "Fishing boat in harbor",
-      title: "Commercial Vessel",
-      description: "18 months after application - still clean"
+      src: "https://5.imimg.com/data5/SELLER/Default/2023/1/XK/XD/OX/3823480/bronze-antifouling-paint.jpg",
+      alt: "Bronze Antifouling",
+      title: "Bronze Series",
+      description: "Premium bronze antifouling formulation"
     },
     {
-      src: "https://images.unsplash.com/photo-1526761122248-c31c93f8b2b9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80",
-      alt: "Luxury yacht at sea",
-      title: "Luxury Motor Yacht",
-      description: "Protected with Anchor Premium Antifouling"
+      src: "https://5.imimg.com/data5/SELLER/Default/2023/7/332766400/UZ/YE/FS/3823480/underwater-hull-paint.jpg",
+      alt: "Underwater Hull Paint",
+      title: "Hull Protection",
+      description: "Complete underwater hull protection"
     },
     {
-      src: "https://images.unsplash.com/photo-1614113076002-59e8c25e1b3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80",
-      alt: "Boat hull being cleaned",
-      title: "Maintenance Check",
-      description: "Minimal cleaning required with our formula"
+      src: "https://5.imimg.com/data5/SELLER/Default/2023/7/332766400/ZD/QK/BU/3823480/marine-antifouling-paint.jpg",
+      alt: "Maintenance Check",
+      title: "Quality Check",
+      description: "Regular maintenance inspection"
     },
     {
-      src: "https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80",
-      alt: "Small fishing boat",
-      title: "Small Craft",
-      description: "Perfect protection for vessels of all sizes"
+      src: "https://5.imimg.com/data5/SELLER/Default/2023/7/332766400/WX/YC/UM/3823480/tin-free-antifouling-paint.jpg",
+      alt: "Eco-friendly Paint",
+      title: "Eco-Friendly Solution",
+      description: "Environmental conscious formulation"
     }
   ];
 

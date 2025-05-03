@@ -13,16 +13,16 @@ interface ProductProps {
 const initialProducts: ProductProps[] = [
   {
     id: 'product-1',
-    name: 'Premium Antifouling Paint',
-    description: 'Our flagship antifouling solution, providing superior protection in all water conditions.',
+    name: 'Underwater Hull Paint',
+    description: 'High-performance antifouling paint for underwater hull protection.',
     features: [
-      'Up to 24 months protection',
-      'Self-polishing formula',
-      'Reduced drag for improved fuel efficiency',
-      'Suitable for all vessel types'
+      'Long-lasting protection',
+      'Excellent adhesion properties',
+      'Prevents marine growth',
+      'Cost-effective solution'
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-    pricingInfo: 'Available in 1L, 2.5L, and 5L containers'
+    imageUrl: 'https://5.imimg.com/data5/SELLER/Default/2023/7/332766400/UZ/YE/FS/3823480/underwater-hull-paint.jpg',
+    pricingInfo: 'Available in 20L containers'
   },
   {
     id: 'product-2',

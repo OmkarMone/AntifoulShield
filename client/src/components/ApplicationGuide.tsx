@@ -67,7 +67,7 @@ const ApplicationGuide = () => {
           </div>
           <div className="relative">
             <img 
-              src="https://images.unsplash.com/photo-1560252527-32af78132096?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+              src="https://5.imimg.com/data5/SELLER/Default/2023/7/332766400/OJ/YD/YV/3823480/marine-bottom-paint.jpg" 
               alt="Applying antifouling paint to a boat hull" 
               className="rounded-lg shadow-xl w-full h-full object-cover"
             />
