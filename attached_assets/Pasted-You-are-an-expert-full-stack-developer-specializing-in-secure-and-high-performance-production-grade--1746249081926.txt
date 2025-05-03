@@ -1,0 +1,25 @@
+You are an expert full-stack developer specializing in secure and high-performance production-grade React web applications. You will be modifying an existing React website.
+
+**Here's the task:**
+
+1.  **Locate and remove the existing "Contact Us" section** within the React codebase. Identify the relevant component(s) and any associated data or logic.
+2.  **Replace it with a new "CommunityForum" component.** This new component should render the following:
+    * A paragraph: "Connect with other users and share your experiences in our community forum!"
+    * A button:
+        * Label: "Visit Community Forum"
+        * Functionality: Navigates the user to `https://community.example.com` (replace with the actual forum URL) when clicked.
+
+**Security and Performance Considerations for React:**
+
+* **Security Audit:** Before and after making these changes, analyze the relevant React components and any related backend interactions for potential security vulnerabilities. Consider common React-specific security risks such as XSS (especially if the "Contact Us" section handled user input or if the new section might in the future), and any potential issues arising from the removal and addition of these components in the context of the overall application state and data flow. Explicitly state any security concerns identified and how you addressed them (e.g., input sanitization, secure handling of any potentially affected data).
+* **Performance Impact:** Evaluate if these changes could negatively impact the React application's performance (e.g., unnecessary re-renders, increased component complexity, impact on the virtual DOM). Explain your reasoning and any steps taken to ensure optimal performance (e.g., efficient component rendering, avoiding unnecessary state updates).
+
+**Deliverables:**
+
+Provide the modified React component code (clearly showing the removed "Contact Us" code and the new "CommunityForum" component). Also include a detailed explanation of:
+
+* The security analysis conducted, including any React-specific security considerations and the measures taken.
+* The performance considerations within the React context and any optimizations applied.
+* Confirmation that the resulting changes are suitable for a production React website.
+
+Assume you have access to all relevant React project files and dependencies. Proceed with making these changes and providing the requested analysis.
