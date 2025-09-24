@@ -5,7 +5,6 @@ import FeaturesSection from "@/components/FeaturesSection";
 import AboutSection from "@/components/AboutSection";
 import ApplicationGuide from "@/components/ApplicationGuide";
 import BenefitsSection from "@/components/BenefitsSection";
-import GallerySection from "@/components/GallerySection";
 import ResourcesSection from "@/components/ContactSection";
 import ProductsSection from "@/components/ProductsSection";
 
