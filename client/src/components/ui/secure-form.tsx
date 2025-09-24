@@ -58,7 +58,7 @@ export type ContactFormData = z.infer<typeof contactFormSchema>;
 /**
  * Secure Input component with built-in sanitization
  */
-interface SecureInputProps extends React.ComponentProps<typeof Input> {
+interface SecureInputProps extends Omit<React.ComponentProps<typeof Input>, 'onChange'> {
   value?: string;
   onChange?: (value: string) => void;
 }
@@ -86,7 +86,7 @@ SecureInput.displayName = "SecureInput";
 /**
  * Secure Textarea component with built-in sanitization
  */
-interface SecureTextareaProps extends React.ComponentProps<typeof Textarea> {
+interface SecureTextareaProps extends Omit<React.ComponentProps<typeof Textarea>, 'onChange'> {
   value?: string;
   onChange?: (value: string) => void;
 }
