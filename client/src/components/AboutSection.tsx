@@ -78,11 +78,6 @@ const AboutSection = () => {
           </div>
         </div>
 
-        <div className="mt-16 text-center">
-          <a href="#contact" className="inline-block px-6 py-3 bg-primary-blue text-white font-heading font-medium rounded-md hover:bg-blue-700 transition duration-150">
-            Get in Touch With Us
-          </a>
-        </div>
       </div>
     </section>
   );

@@ -84,24 +84,6 @@ const BenefitsSection = () => {
           </table>
         </div>
 
-        <div className="mt-12 bg-light-blue rounded-lg p-8 shadow-md border-l-4 border-primary-red">
-          <div className="flex flex-col md:flex-row items-center">
-            <div className="mb-6 md:mb-0 md:mr-8">
-              <img 
-                src="https://images.unsplash.com/photo-1484821582734-6692f7b94c3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=300&q=80" 
-                alt="Boat sailing with clean hull" 
-                className="w-32 h-32 rounded-full object-cover border-4 border-white shadow-md"
-              />
-            </div>
-            <div>
-              <p className="text-lg italic text-anchor-gray mb-4">
-                "We've been using Anchor antifouling paint on our charter fleet for three years now. The protection is outstanding, and we've seen a noticeable reduction in fuel consumption due to the smooth hull surface it maintains."
-              </p>
-              <p className="font-heading font-semibold">Robert Johnson</p>
-              <p className="text-sm text-anchor-gray">Fleet Manager, Pacific Charter Services</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

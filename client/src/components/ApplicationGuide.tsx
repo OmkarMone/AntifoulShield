@@ -54,28 +54,15 @@ const ApplicationGuide = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
-          <div>
-            {steps.map((step, index) => (
-              <ApplicationStep 
-                key={index}
-                number={index + 1}
-                title={step.title}
-                description={step.description}
-              />
-            ))}
-          </div>
-          <div className="relative">
-            <img 
-              src="https://5.imimg.com/data5/SELLER/Default/2023/7/332766400/OJ/YD/YV/3823480/marine-bottom-paint.jpg" 
-              alt="Applying antifouling paint to a boat hull" 
-              className="rounded-lg shadow-xl w-full h-full object-cover"
+        <div className="max-w-4xl mx-auto">
+          {steps.map((step, index) => (
+            <ApplicationStep 
+              key={index}
+              number={index + 1}
+              title={step.title}
+              description={step.description}
             />
-            <div className="absolute -top-4 -left-4 bg-primary-red text-white p-4 rounded shadow-lg">
-              <p className="text-sm font-heading font-bold">PROVEN RESULTS</p>
-              <p className="text-xs">Easy application process</p>
-            </div>
-          </div>
+          ))}
         </div>
 
         <div className="mt-12 p-6 bg-white rounded-lg shadow border-l-4 border-primary-blue">

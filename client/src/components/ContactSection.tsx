@@ -52,23 +52,6 @@ const ResourcesSection = () => {
           </div>
         </div>
 
-        <div className="mt-12 p-8 bg-white rounded-lg shadow-lg border-t-4 border-primary-red">
-          <h3 className="text-2xl font-heading font-bold text-primary-blue mb-4">Product Documentation</h3>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <h4 className="font-heading font-semibold text-dark-blue mb-3">Application Guide</h4>
-              <p className="text-anchor-gray mb-4">
-                Detailed instructions for proper surface preparation, application techniques, and maintenance procedures.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-heading font-semibold text-dark-blue mb-3">Technical Data</h4>
-              <p className="text-anchor-gray mb-4">
-                Comprehensive technical specifications, including coverage rates, dry times, and performance characteristics.
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

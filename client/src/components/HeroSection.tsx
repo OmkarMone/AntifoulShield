@@ -14,9 +14,6 @@ const HeroSection = () => {
               <a href="#features" className="px-6 py-3 bg-primary-red text-white font-heading font-medium rounded-md hover:bg-red-700 transition duration-150">
                 Explore Features
               </a>
-              <a href="#contact" className="px-6 py-3 bg-transparent border-2 border-white text-white font-heading font-medium rounded-md hover:bg-white hover:text-primary-blue transition duration-150">
-                Get a Quote
-              </a>
             </div>
           </div>
           <div className="relative">
