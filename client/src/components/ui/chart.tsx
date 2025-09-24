@@ -2,6 +2,7 @@ import * as React from "react"
 import * as RechartsPrimitive from "recharts"
 
 import { cn } from "@/lib/utils"
+import { sanitizeCss, sanitizeColorValue } from "@/lib/security"
 
 // Format: { THEME_NAME: CSS_SELECTOR }
 const THEMES = { light: "", dark: ".dark" } as const
@@ -74,25 +75,43 @@ const ChartStyle = ({ id, config }: { id: string; config: ChartConfig }) => {
     return null
   }
 
+  // Generate secure CSS with sanitization
+  const generateSecureCSS = () => {
+    return Object.entries(THEMES)
+      .map(([theme, prefix]) => {
+        const safePrefix = prefix.replace(/[^a-zA-Z0-9\-_.\s]/g, '');
+        const safeId = id.replace(/[^a-zA-Z0-9\-_]/g, '');
+        
+        const colorDeclarations = colorConfig
+          .map(([key, itemConfig]) => {
+            const safeKey = key.replace(/[^a-zA-Z0-9\-_]/g, '');
+            const color =
+              itemConfig.theme?.[theme as keyof typeof itemConfig.theme] ||
+              itemConfig.color;
+            
+            if (!color) return null;
+            
+            // Sanitize color value to prevent CSS injection
+            const safeColor = sanitizeColorValue(color);
+            return `  --color-${safeKey}: ${safeColor};`;
+          })
+          .filter(Boolean)
+          .join("\n");
+
+        return `
+${safePrefix} [data-chart="${safeId}"] {
+${colorDeclarations}
+}`;
+      })
+      .join("\n");
+  };
+
+  const secureCSS = sanitizeCss(generateSecureCSS());
+
   return (
     <style
       dangerouslySetInnerHTML={{
-        __html: Object.entries(THEMES)
-          .map(
-            ([theme, prefix]) => `
-${prefix} [data-chart=${id}] {
-${colorConfig
-  .map(([key, itemConfig]) => {
-    const color =
-      itemConfig.theme?.[theme as keyof typeof itemConfig.theme] ||
-      itemConfig.color
-    return color ? `  --color-${key}: ${color};` : null
-  })
-  .join("\n")}
-}
-`
-          )
-          .join("\n"),
+        __html: secureCSS,
       }}
     />
   )
