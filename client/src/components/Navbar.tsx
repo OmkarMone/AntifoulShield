@@ -30,6 +30,7 @@ const Navbar = () => {
             <a href="#about" className="font-heading font-medium text-anchor-gray hover:text-primary-blue transition duration-150">About Us</a>
             <a href="#application" className="font-heading font-medium text-anchor-gray hover:text-primary-blue transition duration-150">Application</a>
             <a href="#benefits" className="font-heading font-medium text-anchor-gray hover:text-primary-blue transition duration-150">Benefits</a>
+            <a href="#ourprods" className="font-heading font-medium text-anchor-gray hover:text-primary-blue transition duration-150">Our Products</a>
           </div>
           
           {/* Mobile menu button */}
@@ -51,6 +52,7 @@ const Navbar = () => {
         <a href="#about" onClick={handleMobileLinkClick} className="block px-4 py-2 text-sm font-heading font-medium text-anchor-gray hover:bg-light-blue">About Us</a>
         <a href="#application" onClick={handleMobileLinkClick} className="block px-4 py-2 text-sm font-heading font-medium text-anchor-gray hover:bg-light-blue">Application</a>
         <a href="#benefits" onClick={handleMobileLinkClick} className="block px-4 py-2 text-sm font-heading font-medium text-anchor-gray hover:bg-light-blue">Benefits</a>
+        <a href="#ourprods" onClick={handleMobileLinkClick} className="block px-4 py-2 text-sm font-heading font-medium text-anchor-gray hover:bg-light-blue">Our Products</a>
       </div>
     </nav>
   );

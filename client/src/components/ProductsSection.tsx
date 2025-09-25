@@ -70,7 +70,7 @@ const ProductCard = ({ product }: { product: ProductProps }) => {
   const [showDetails, setShowDetails] = useState(false);
 
   return (
-    <div className="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 h-full flex flex-col">
+    <div id="ourprods" className="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 h-full flex flex-col">
       <div className="relative h-64 overflow-hidden">
         <img 
           src={product.imageUrl} 
