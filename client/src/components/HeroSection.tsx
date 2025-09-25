@@ -5,7 +5,7 @@ const HeroSection = () => {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
             <h1 className="text-4xl md:text-5xl font-heading font-bold leading-tight">
-              Superior <span className="text-primary-red">Antifouling</span> Protection
+              SPC <span className="text-primary-red">Antifouling</span> Paint (TBT Free)
             </h1>
             <p className="mt-4 text-lg md:text-xl text-gray-200 font-body">
               Designed for maximum performance and longevity, our premium antifouling paint keeps your vessel protected and efficient in all water conditions.
@@ -14,11 +14,14 @@ const HeroSection = () => {
               <a href="#features" className="px-6 py-3 bg-primary-red text-white font-heading font-medium rounded-md hover:bg-red-700 transition duration-150">
                 Explore Features
               </a>
+              <a href="https://www.indiamart.com/anchorpaints/?srsltid=AfmBOorE-VEpf32XpYPRgTU_FQJX6jTw4kvTdDBeI0FtEFZj0_3Ta6Hk" target="_blank" className="px-6 py-3 bg-transparent border-2 border-white text-white font-heading font-medium rounded-md hover:bg-white hover:text-primary-blue transition duration-150">
+                Click to Buy
+              </a>
             </div>
           </div>
           <div className="relative">
             <img 
-              src="https://images.unsplash.com/photo-1600177897995-e67c73ed44e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+              src="./images/boat-new.jpeg" 
               alt="Boat with antifouling paint" 
               className="rounded-lg shadow-2xl w-full h-[400px] object-cover"
             />

@@ -9,7 +9,7 @@ const AboutSection = () => {
             About <span className="text-primary-red">Anchor Paints</span>
           </h2>
           <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto font-body">
-            Trusted by marine professionals and boat owners for over 25 years, providing the highest quality antifouling solutions for vessels of all sizes.
+            Trusted by marine professionals and boat owners for over 20 years, providing the highest quality antifouling solutions for vessels of all sizes.
           </p>
         </div>
 
@@ -18,7 +18,7 @@ const AboutSection = () => {
             <div className="bg-white rounded-lg shadow-lg p-8 border-t-4 border-primary-red">
               <h3 className="text-2xl font-heading font-bold text-primary-blue mb-4">Our Company</h3>
               <p className="text-gray-600 mb-6">
-                Founded in 2010, Anchor Paints has been dedicated to developing superior marine coatings that protect vessels from the harsh marine environment while enhancing performance and efficiency for the Indian market.
+                Founded in 2005, Anchor Paints has been dedicated to developing superior marine coatings that protect vessels from the harsh marine environment while enhancing performance and efficiency for the Indian market.
               </p>
 
               <p className="text-gray-600 mb-6">
@@ -49,7 +49,7 @@ const AboutSection = () => {
               <div className="flex flex-col sm:flex-row items-center gap-6 mb-6">
                 <div className="flex-shrink-0">
                   <img 
-                  src="/images/mukesh-mone.jpg" 
+                  src="./images/mukesh-mone-profile.png" 
                   alt="Mr. Mukesh Mone - Founder & CEO" 
                   className="w-32 h-32 rounded-full object-cover"
                 />
