@@ -15,7 +15,7 @@ const HeroSection = () => {
                 Explore Features
               </a>
               <a href="https://www.indiamart.com/anchorpaints/?srsltid=AfmBOorE-VEpf32XpYPRgTU_FQJX6jTw4kvTdDBeI0FtEFZj0_3Ta6Hk" target="_blank" className="px-6 py-3 bg-transparent border-2 border-white text-white font-heading font-medium rounded-md hover:bg-white hover:text-primary-blue transition duration-150">
-                Click to Buy
+                Click for more information
               </a>
             </div>
           </div>
